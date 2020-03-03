@@ -1,0 +1,69 @@
+<!-- <div class="container">
+  <div class="row" [formGroup]="form">
+    <div class="col-md-2 ">
+      <h3>Choose File</h3>
+      <div class="form-group">
+        <input type="file" name="image"  formControlName="image" (change)="fileProgress($event)" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="desc" />
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="notes" />
+      </div>
+      <div *ngIf="fileUploadProgress">
+        Upload progress: {{ fileUploadProgress }}
+      </div>
+      <div class="mb-3" *ngIf="uploadedFilePath">
+        {{uploadedFilePath}}
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="image-previe " *ngIf="previewUrl">
+        <img [src]="previewUrl" />
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <button class="btn btn-info " routerLink="ngx-upload">go to ngx</button>
+<button class="btn btn-info mx-3" routerLink="normal-upload">go to normal</button>
+<button class="btn btn-info mx-3" routerLink="form-array">go form-array</button>
+<button class="btn btn-info mx-3" routerLink="daily-journal">go daily-journal</button>
+<button class="btn btn-info mx-3" routerLink="academind-file-upload">go academind-file-upload</button>
+<button class="btn btn-info mx-3" routerLink="free-code-camp-upload-image">go free-code-camp-upload-image</button> -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <ul class="nav nav_height justify-content-center">
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" routerLink="ngx-upload">go to ngx</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" routerLink="normal-upload"> go to normal </a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" routerLink="daily-journal"> go daily-journal </a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" routerLink="form-array"> go form-array</a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" routerLink="academind-file-upload"> go academind-file-upload
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link" routerLink="free-code-camp-upload-image"> go
+            free-code-camp-upload-image </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
